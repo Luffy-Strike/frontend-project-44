@@ -1,21 +1,31 @@
 {
-    "name":"@hexlet/code",
-    "version":"1.0.0",
-    "description":"",
-    "main":"index.js",
-    "scripts":
-        {"test":"echo \"Error: no test specified\" && exit 1"},
-    "repository":
-        {"type":"git",
-        "url":"git+https://github.com/siddikalexandr/frontend-project-44.git"},
-    "author":"Ivan",
-    "license":"ISC",
-    "bugs":
-        {"url":"https://github.com/siddikalexandr/frontend-project-44/issues"},
-    "homepage":"https://github.com/siddikalexandr/frontend-project-44#readme",
-    "bin":
-        {"brain-games":"bin/brain-games"},
-    "type":"module",
-    "dependencies":
-        {"readline-sync":"^1.4.10"}
+    "name": "@hexlet/code",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/siddikalexandr/frontend-project-44.git"
+    },
+    "author": "Ivan",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/siddikalexandr/frontend-project-44/issues"
+    },
+    "homepage": "https://github.com/siddikalexandr/frontend-project-44#readme",
+    "bin": {
+        "brain-games": "bin/brain-games"
+    },
+    "type": "module",
+    "dependencies": {
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-plugin-import": "^2.27.5",
+        "readline-sync": "^1.4.10"
+    },
+    "devDependencies": {
+        "eslint": "^8.36.0"
+    }
 }
