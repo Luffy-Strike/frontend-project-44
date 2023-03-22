@@ -13,6 +13,6 @@ const even = () => {
   }
 };
 
-even()
+even();
 
 export default even;
