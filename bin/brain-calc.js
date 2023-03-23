@@ -7,7 +7,7 @@ import magicNumbers from "../scr/math.js";
 const calcGame = () => {
     const userName = greeting('What is the result of the expression?');
     for (let i = 0; i < 3; i += 1) {
-        const operator = getOperator('+', '', '*');
+        const operator = getOperator(['+', '-', '*']);
         const x = magicNumbers(1, 12);
         const y = magicNumbers(1, 12);
         const example = `${x} ${operator} ${y}`;
