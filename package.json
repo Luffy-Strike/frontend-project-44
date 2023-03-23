@@ -17,7 +17,9 @@
     },
     "homepage": "https://github.com/siddikalexandr/frontend-project-44#readme",
     "bin": {
-        "brain-games": "bin/brain-games"
+        "brain-games": "bin/brain-games",
+        "brain-even": "bin/brain-even.js",
+        "brain-calc": "bin/brain-calc.js"
     },
     "type": "module",
     "dependencies": {
