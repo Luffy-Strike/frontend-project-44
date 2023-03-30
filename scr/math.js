@@ -1,9 +1,4 @@
-const magicNumbers = (min = 1, max = 70) => {
-  const minimal = Math.ceil(min);
-  const maximum = Math.floor(max);
-  const randomNumber = Math.floor(Math.random() * (maximum - minimal + 1));
-  return randomNumber;
-};
+const magicNumbers = (min = 1, max = 70) => Math.floor(min + Math.random() * (max - min + 1));
 
 export default magicNumbers;
 
@@ -32,4 +27,24 @@ export const getDivisor = (a, b) => {
     }
   }
   return x;
-}
+};
+
+export const progression = (a, b) => {
+  let result = '';
+  const length = magicNumbers(5, 10);
+  const elected = magicNumbers(1, length - 2);
+  for (let i = 0; i < length; i += 1) {
+    const form = (a + (b * i));
+    result += (i !== elected) ? `${form} ` : '.. ';
+  }
+  return result;
+};
+
+export const gitProgress = (str) => {
+  const sort = str.split(' ');
+  const indexNum = sort.indexOf('..');
+  const oneNumber = parseInt(sort[indexNum - 1], 10);
+  const twoNumber = parseInt(sort[indexNum + 1], 10);
+  const solution = (oneNumber + twoNumber) / 2;
+  return `${solution}`;
+};
