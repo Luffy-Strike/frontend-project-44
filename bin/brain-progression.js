@@ -2,7 +2,7 @@
 
 import greeting from '../scr/cli.js';
 import { answerForm, checkAnswer } from '../scr/index.js';
-import magicNumbers, { progression, gitProgress } from '../scr/math.js';
+import { magicNumbers, progression, gitProgress } from '../scr/math.js';
 
 const progress = () => {
   const userName = greeting('What number is missing in the progression?');

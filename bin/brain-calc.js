@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import greeting from '../scr/cli.js';
 import { answerForm, checkAnswer } from '../scr/index.js';
-import magicNumbers, { calc, getOperator } from '../scr/math.js';
+import { magicNumbers, calc, getOperator } from '../scr/math.js';
 
 const calcGame = () => {
   const userName = greeting('What is the result of the expression?');

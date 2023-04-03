@@ -1,4 +1,4 @@
-import magicNumbers, { getDivisor } from '../scr/math.js';
+import { magicNumbers, getDivisor } from '../scr/math.js';
 import greeting from '../scr/cli.js';
 import { answerForm, checkAnswer } from '../scr/index.js';
 

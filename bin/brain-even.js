@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import greeting from '../scr/cli.js';
-import magicNumbers from '../scr/math.js';
+import { magicNumbers } from '../scr/math.js';
 import { answerForm, checkAnswer } from '../scr/index.js';
 
 const even = () => {
@@ -14,5 +14,3 @@ const even = () => {
 };
 
 even();
-
-export default even;
