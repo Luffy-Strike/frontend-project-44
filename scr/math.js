@@ -1,6 +1,4 @@
-const magicNumbers = (min = 1, max = 70) => Math.floor(min + Math.random() * (max - min + 1));
-
-export default magicNumbers;
+export const magicNumbers = (min = 1, max = 70) => Math.floor(min + Math.random() * (max - min + 1));
 
 export const calc = (x, y, oper) => {
   let result = 0;
@@ -47,4 +45,13 @@ export const gitProgress = (str) => {
   const twoNumber = parseInt(sort[indexNum + 1], 10);
   const solution = (oneNumber + twoNumber) / 2;
   return `${solution}`;
+};
+
+export const isPrime = (number) => {
+  for (let i = 2; i < number; i += 1) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+  return true;
 };
