@@ -4,7 +4,7 @@ import { answerForm, checkAnswer } from '../scr/index.js';
 
 const gcd = () => {
   const userName = greeting('Find the greatest common divisor of given numbers.');
-  for (let i = 0; i < 3; i = +1) {
+  for (let i = 0; i < 3; i += 1) {
     const x = magicNumbers();
     const y = magicNumbers();
     const ex = `${x} ${y}`;
