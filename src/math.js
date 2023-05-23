@@ -1,4 +1,4 @@
-export const magicNumbers = (min = 1, max = 70) => Math.floor(min + Math.random() * (max - min + 1));
+export const getRandomInRange = (min = 1, max = 70) => Math.floor(min + Math.random() * (max - min + 1));
 
 export const calc = (x, y, oper) => {
   let result = 0;
@@ -29,8 +29,8 @@ export const getDivisor = (a, b) => {
 
 export const progression = (a, b) => {
   let result = '';
-  const length = magicNumbers(5, 10);
-  const elected = magicNumbers(1, length - 2);
+  const length = getRandomInRange(5, 10);
+  const elected = getRandomInRange(1, length - 2);
   for (let i = 0; i < length; i += 1) {
     const form = (a + (b * i));
     result += (i !== elected) ? `${form} ` : '.. ';
