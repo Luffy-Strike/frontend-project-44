@@ -1,31 +1,5 @@
 #!/usr/bin/env node
-import greeting from '../scr/cli.js';
-import { answerForm, checkAnswer } from '../scr/index.js';
-import { getRandomInRange, calc, getOperator } from '../scr/math.js';
 
-const calcGame = () => {
-  const userName = greeting('What is the result of the expression?');
-  for (let i = 0; i < 3; i += 1) {
-    const operator = getOperator(['+', '-', '*']);
-    const x = getRandomInRange(1, 12);
-    const y = getRandomInRange(1, 12);
-    const example = `${x} ${operator} ${y}`;
-    const userAnswer = answerForm(example);
-    let correctAnswer = 0;
-    switch (operator) {
-      case '+':
-        correctAnswer = calc(x, y, '+');
-        break;
-      case '-':
-        correctAnswer = calc(x, y, '-');
-        break;
-      case '*':
-        correctAnswer = calc(x, y, '*');
-        break;
-      default:
-    }
-    if (!checkAnswer(userAnswer, correctAnswer, userName, i)) break;
-  }
-};
+import calc from '../src/games/calc.js';
 
-calcGame();
+calc();
