@@ -16,15 +16,15 @@
     },
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/kalininaekaterina2004/frontend-project-44.git"
+      "url": "git+https://github.com/Luffy-Strike/frontend-project-44.git"
     },
     "author": "",
     "license": "ISC",
     "bugs": {
-      "url": "https://github.com/kalininaekaterina2004/frontend-project-44/issues"
+      "url": "https://github.com/Luffy-Strike/frontend-project-44/issues"
     },
     "type": "module",
-    "homepage": "https://github.com/kalininaekaterina2004/frontend-project-44#readme",
+    "homepage": "https://github.com/Luffy-Strike/frontend-project-44#readme",
     "dependencies": {
       "readline-sync": "^1.4.10"
     },
